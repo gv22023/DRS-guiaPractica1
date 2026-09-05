@@ -2,7 +2,7 @@ using System;
 
 namespace DRS.Ejercicio3
 {
-    // Clase base
+// Clase base vehiculo
     public class Vehiculo
     {
         public void Arrancar()

@@ -12,7 +12,7 @@ namespace DRS.Ejercicio2
         public Empleado(string nombre, int edad)
         {
             this.nombre = nombre;
-            this.Edad = edad; // Asignación mediante la propiedad para ejecutar la validación
+            this.Edad = edad; 
         }
 
         // Propiedad para Nombre
@@ -22,7 +22,7 @@ namespace DRS.Ejercicio2
             set { nombre = value; }
         }
 
-        // Propiedad para Edad con validación
+        // Propiedad para Edad y su validación
         public int Edad
         {
             get { return edad; }

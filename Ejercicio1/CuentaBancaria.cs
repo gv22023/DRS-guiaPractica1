@@ -2,13 +2,12 @@ using System;
 
 namespace DRS.Ejercicio1
 {
-    /// <summary>
-    /// Clase que representa una cuenta bancaria aplicando el principio de abstracción.
-    /// Oculta el atributo privado del saldo y solo permite interactuar mediante métodos públicos.
-    /// </summary>
+   
+    // Clase que representa una cuenta bancaria aplicando el principio de abstracción.
+    
     public class CuentaBancaria
     {
-        // Atributo privado para proteger y ocultar el saldo (Abstracción/Encapsulación)
+        // Atributo privado para proteger y ocultar el saldo 
         private decimal saldo;
 
         // Constructor
