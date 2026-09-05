@@ -1,0 +1,14 @@
+C:\Users\josue\Desktop\DRS\bin\Debug\net10.0\DRS.exe
+C:\Users\josue\Desktop\DRS\bin\Debug\net10.0\DRS.deps.json
+C:\Users\josue\Desktop\DRS\bin\Debug\net10.0\DRS.runtimeconfig.json
+C:\Users\josue\Desktop\DRS\bin\Debug\net10.0\DRS.dll
+C:\Users\josue\Desktop\DRS\bin\Debug\net10.0\DRS.pdb
+C:\Users\josue\Desktop\DRS\obj\Debug\net10.0\DRS.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\josue\Desktop\DRS\obj\Debug\net10.0\DRS.AssemblyInfoInputs.cache
+C:\Users\josue\Desktop\DRS\obj\Debug\net10.0\DRS.AssemblyInfo.cs
+C:\Users\josue\Desktop\DRS\obj\Debug\net10.0\DRS.csproj.CoreCompileInputs.cache
+C:\Users\josue\Desktop\DRS\obj\Debug\net10.0\DRS.dll
+C:\Users\josue\Desktop\DRS\obj\Debug\net10.0\refint\DRS.dll
+C:\Users\josue\Desktop\DRS\obj\Debug\net10.0\DRS.pdb
+C:\Users\josue\Desktop\DRS\obj\Debug\net10.0\DRS.genruntimeconfig.cache
+C:\Users\josue\Desktop\DRS\obj\Debug\net10.0\ref\DRS.dll
