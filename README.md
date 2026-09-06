@@ -1,4 +1,4 @@
-# Actividad Evaluada 1: Guía de Trabajo - POO en C#
+# Actividad Evaluada 1: Guía de trabajo - POO en C#
 
 **Universidad de El Salvador**  
 **Facultad Multidisciplinaria de Occidente**  
@@ -31,3 +31,27 @@ DRS/
 ├── Program.cs
 ├── DRS.csproj
 └── README.md
+```
+
+---
+
+## Instrucciones de Ejecución
+
+### Prerrequisitos
+* Tener instalado el **.NET SDK 8.0** (o posterior).
+
+### Pasos para clonar y ejecutar:
+1. Clonar el repositorio desde la terminal:
+   ```bash
+   git clone https://github.com/gv22023/DRS-guiaPractica1.git
+   ```
+
+2. Entrar a la carpeta del proyecto:
+   ```bash
+   cd DRS-guiaPractica1
+   ```
+
+3. Ejecutar el proyecto:
+   ```bash
+   dotnet run
+   ```
