@@ -10,7 +10,7 @@
 
 ## Integrantes
 * **Josué Adán García Valiente - GV22023**
-* **Salvador Enrique Quezada - QC07003**
+* **Salvador Enrique Quezada Campos - QC07003**
 
 ---
 

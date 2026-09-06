@@ -20,75 +20,77 @@ código creado por Salvador Enrique Quezada Campos QC07003
 
 using System;
 
-//Clase base Animal que tendra el método HacerSonido()
-public class Animal
+namespace DRS.Ejercicio5
 {
-    public virtual void HacerSonido()
+    //Clase base Animal que tendra el método HacerSonido()
+    public class Animal
     {
-        Console.WriteLine("El animal hace un sonido");
-    }
+        public virtual void HacerSonido()
+        {
+            Console.WriteLine("El animal hace un sonido");
+        }
 
-    public void Respirar()
+        public void Respirar()
+        {
+            Console.WriteLine("El animal está respirando");
+        }
+    }//fin de la clase Animal
+
+    // clase intermedia Mamifero que hereda de Animal y añade el método Alimentar()
+    public class Mamifero : Animal
     {
-        Console.WriteLine("El animal está respirando");
-    }
-}//fin de la clase Animal
+        //Método Alimentar que es exclusivo de la clase
+        public void Alimentar()
+        {
+            Console.WriteLine("El mamífero se alimenta");
+        }
+    }// fin de la clase Mamifero
 
-// clase intermedia Mamifero que hereda de Animal y añade el método Alimentar()
-public class Mamifero : Animal
-{
-    //Método Alimentar que es exclusivo de la clase
-    public void Alimentar()
+    // Clase derivada perro que hereda de mamifero y sobreescribe HacerSonido()
+    public class Perro : Mamifero
     {
-        Console.WriteLine("El mamífero se alimenta");
-    }
-}// fin de la clase Mamifero
+        //se sobreescribe el método HacerSonido()
+        public override void HacerSonido()
+        {
+            Console.WriteLine("El perro ladra: GUAU, GUAU");
+        }
 
-// Clase derivada perro que hereda de mamifero y sobreescribe HacerSonido()
-public class Perro : Mamifero
-{
-    //se sobreescribe el método HacerSonido()
-    public override void HacerSonido()
+        public void Correr()
+        {
+            Console.WriteLine("El perro está corriendo");
+        }
+    }// fin clase Perro
+
+    //Clase principal de ejecución
+    public class DemostracionEjercicio5
     {
-        Console.WriteLine("El perro ladra: GUAU, GUAU");
-    }
+        public static void Ejecutar()
+        {
+            Console.WriteLine("****** Herencia Multinivel y Sobrescritura ******\n");
 
-    public void Correr()
-    {
-        Console.WriteLine("El perro está corriendo");
-    }
-}// fin clase Perro
+            // Creamos la instancia de la clase
+            Perro miPerro = new Perro();
 
-//Clase principal
-class Ejercicio5
-{
-    static void Main(string[] args)
-    {
-        Console.WriteLine("****** Herencia Multinivel y Sobrescritura ******\n");
-
-        // Creamos la instancia de la clase
-        Perro miPerro = new Perro();
-
-        Console.WriteLine("****** Métodos disponibles en Perro ******");
-        miPerro.HacerSonido();  // Sobrescrito
-        miPerro.Respirar();     // Heredado de Animal
-        miPerro.Alimentar();    // Heredado de Mamifero
-        miPerro.Correr();       // Propio
-        
-        Console.WriteLine("\n****** Polimorfismo con referencias de diferentes niveles ******");
-        
-        Animal animalRef = miPerro;
-        Mamifero mamiferoRef = miPerro;
-        Perro perroRef = miPerro;
-        
-        Console.Write("Desde Animal: ");
-        animalRef.HacerSonido();
-        
-        Console.Write("Desde Mamifero: ");
-        mamiferoRef.HacerSonido();
-        
-        Console.Write("Desde Perro: ");
-        perroRef.HacerSonido();
-    }// fin de Main
-}// fin de la clase Ejercicio5
-
+            Console.WriteLine("****** Métodos disponibles en Perro ******");
+            miPerro.HacerSonido();  // Sobrescrito
+            miPerro.Respirar();     // Heredado de Animal
+            miPerro.Alimentar();    // Heredado de Mamifero
+            miPerro.Correr();       // Propio
+            
+            Console.WriteLine("\n****** Polimorfismo con referencias de diferentes niveles ******");
+            
+            Animal animalRef = miPerro;
+            Mamifero mamiferoRef = miPerro;
+            Perro perroRef = miPerro;
+            
+            Console.Write("Desde Animal: ");
+            animalRef.HacerSonido();
+            
+            Console.Write("Desde Mamifero: ");
+            mamiferoRef.HacerSonido();
+            
+            Console.Write("Desde Perro: ");
+            perroRef.HacerSonido();
+        }// fin de Ejecutar
+    }// fin de la clase DemostracionEjercicio5
+}

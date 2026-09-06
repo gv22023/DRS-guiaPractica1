@@ -16,58 +16,60 @@
 **/
 
 using System;
-public class Animal
+
+namespace DRS.Ejercicio4
 {
-    //La palabra virtual permite que el método sea sobreescrito en las clases derivadas
-    public virtual void HacerSonido()
+    public class Animal
     {
-        Console.WriteLine("El animal hace un sonido");
-    }
-}// fin de la clase
+        //La palabra virtual permite que el método sea sobreescrito en las clases derivadas
+        public virtual void HacerSonido()
+        {
+            Console.WriteLine("El animal hace un sonido");
+        }
+    }// fin de la clase
 
-// clase derivada Perro, hereda de la clase animal y sobreescribe el método HacerSonido()
-public class Perro : Animal
-{
-    //sobrescribimos el método HacerSonido() de la clase base
-    public override void HacerSonido()
+    // clase derivada Perro, hereda de la clase animal y sobreescribe el método HacerSonido()
+    public class Perro : Animal
     {
-        Console.WriteLine("El perro ladra: GUAU, GUAU");
-    }
-}//fin clase Perro
+        //sobrescribimos el método HacerSonido() de la clase base
+        public override void HacerSonido()
+        {
+            Console.WriteLine("El perro ladra: GUAU, GUAU");
+        }
+    }//fin clase Perro
 
-// clase derivada Gato, hereda de la clase animal y sobreescribe el metodo HacerSonido()
-public class Gato : Animal
-{
-    //sobrescribimos el método HacerSonido() de la clase base
-    public override void HacerSonido()
+    // clase derivada Gato, hereda de la clase animal y sobreescribe el metodo HacerSonido()
+    public class Gato : Animal
     {
-        Console.WriteLine("El Gato maúlla: MIAU, MIAU");
-    }
-}// fin clase Gato
+        //sobrescribimos el método HacerSonido() de la clase base
+        public override void HacerSonido()
+        {
+            Console.WriteLine("El Gato maúlla: MIAU, MIAU");
+        }
+    }// fin clase Gato
 
-//clase que contiene el punto de entrada de la aplicación
-class Ejercicio4
-{
-    static void Main(string[] args)
+    //clase que contiene la ejecución de la prueba
+    public class DemostracionEjercicio4
     {
-        //instancia de clases
-        Perro perro = new Perro(); // declaramos un objeto llamado perro de tipo Perro
-        Gato gato = new Gato(); // declaramos un objeto llamado gato de tipo Gato
+        public static void Ejecutar()
+        {
+            //instancia de clases
+            Perro perro = new Perro(); // declaramos un objeto llamado perro de tipo Perro
+            Gato gato = new Gato(); // declaramos un objeto llamado gato de tipo Gato
 
-        //Asignación polimórfica
-        Animal animal1 = perro; //guardamos la instancia de perro en una referencia de tipo Animal
-        Animal animal2 = gato; //guardamos la instancia de gato en una referencia de tipo Animal
-
-
-        Console.WriteLine("********* POLIMORFISMO *********\n");
-        Console.WriteLine("Referencias de tipo Animal:");
-        animal1.HacerSonido(); // Salida: El perro ladra: GUAU, GUAU
-        animal2.HacerSonido(); // Salida: El Gato maúlla: MIAU, MIAU
-
-        Console.WriteLine("\nReferencias directas:");
-        perro.HacerSonido(); // Salida: El perro ladra: GUAU, GUAU
-        gato.HacerSonido(); // Salida: El Gato maúlla: MIAU, MIAU
+            //Asignación polimórfica
+            Animal animal1 = perro; //guardamos la instancia de perro en una referencia de tipo Animal
+            Animal animal2 = gato; //guardamos la instancia de gato en una referencia de tipo Animal
 
 
-    }//fin de Main
-}//fin de la clase Ejercicio4
+            Console.WriteLine("********* POLIMORFISMO *********\n");
+            Console.WriteLine("Referencias de tipo Animal:");
+            animal1.HacerSonido(); // Salida: El perro ladra: GUAU, GUAU
+            animal2.HacerSonido(); // Salida: El Gato maúlla: MIAU, MIAU
+
+            Console.WriteLine("\nReferencias directas:");
+            perro.HacerSonido(); // Salida: El perro ladra: GUAU, GUAU
+            gato.HacerSonido(); // Salida: El Gato maúlla: MIAU, MIAU
+        }//fin de Ejecutar
+    }//fin de la clase DemostracionEjercicio4
+}
