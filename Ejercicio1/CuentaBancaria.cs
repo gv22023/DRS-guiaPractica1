@@ -1,3 +1,26 @@
+/***
+    Ejercicio 1: Implementación de Abstracción de Datos 
+
+    Objetivo: Implementar un tipo de datos abstracto que oculta detalles de implementación. 
+
+    Enunciado: 
+    Crea una clase CuentaBancaria que represente una cuenta bancaria. Utiliza abstracción de 
+    datos para ocultar el detalle de la implementación del saldo y solo permite el acceso a través 
+    de los métodos públicos. Los métodos deben permitir realizar operaciones como depositar, 
+    retirar y consultar el saldo. 
+
+    Instrucciones: 
+        • Define la clase CuentaBancaria con un atributo privado para el saldo. 
+        • Implementa los métodos: 
+        • Depositar(decimal monto): permite agregar dinero a la cuenta. 
+        • Retirar(decimal monto): permite retirar dinero de la cuenta. 
+        • ObtenerSaldo(): devuelve el saldo actual. 
+        • Los métodos deben validar que los montos sean positivos y que no haya fondos insuficientes para la operación de retiro.
+
+    Codigo hecho por: Josué Adán García Valiente - GV22023
+
+**/
+
 using System;
 
 namespace DRS.Ejercicio1
